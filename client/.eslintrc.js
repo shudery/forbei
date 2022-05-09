@@ -1,7 +1,15 @@
 module.exports = {
-  "extends": ["taro/react"],
+  "extends": ["taro/react", "plugin:prettier/recommended"],
   "rules": {
     "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    // 统一eslint prettier配置
+    "prettier/prettier": [
+      "warn",
+      {},
+      {
+        usePrettierrc: true,
+      },
+    ],
   }
 }
